@@ -1,0 +1,17 @@
+# cook your dish here
+for i in range(int(input())):
+    X,Y,Z = list(map(int,input().split()))
+    temp = 0
+    res = 0
+    if Z == 0:
+        pass
+    else:
+        temp = Z//30
+    
+    res = (X+temp)/Y
+    
+    if (X+temp)%Y == 0:
+        print(int(res))
+    else:
+        print(int(res)+1)
+    
